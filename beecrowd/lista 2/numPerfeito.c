@@ -4,8 +4,7 @@ Projeto: beecrowd lista 2-numero perfeito
 */
 #include <stdio.h>
 
-int main(void)
-{
+int main(void){
     // definindo variaveis
     int n, m, soma;
     soma = 0;
@@ -15,25 +14,20 @@ int main(void)
     // imput
     scanf("%d", &n);
     // calculo
-    for (int i = 1; i <= n; i++)
-    {
+    for (int i = 1; i <= n; i++){
         scanf("%d", &m);
         soma = 0;
 
-        for (int j = 1; j < m; j++)
-        {
+        for (int j = 1; j < m; j++){
             if (m % j == 0)
             {
                 soma = soma + j;
             };
         };
 
-        if (soma == m)
-        {
+        if (soma == m){
             printf("%d eh perfeito\n", m);
-        }
-        else
-        {
+        }else{
             printf("%d nao eh perfeito\n", m);
         };
     };
