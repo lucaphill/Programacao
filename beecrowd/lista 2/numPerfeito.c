@@ -31,4 +31,5 @@ int main(void){
             printf("%d nao eh perfeito\n", m);
         };
     };
+    return 0;
 }
