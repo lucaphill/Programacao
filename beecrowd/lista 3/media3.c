@@ -59,6 +59,9 @@ int main(void){
         media = (media + exame)/2;
         status = situacao(media);
         switch(status){
+        case 1:
+            puts("Aluno aprovado.");
+            break;
         case 2:
             puts("Aluno aprovado.");
             break;
