@@ -12,7 +12,7 @@ int main (void){
     scanf("%d %d",&a,&b);
 
     if(a < 0 || b < 0){
-        printf("Numero invalido, use apenas positivos");
+        printf("Numero invalido, use apenas positivos\n");
         return 1;
     }
 
