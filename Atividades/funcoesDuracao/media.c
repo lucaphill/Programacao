@@ -1,6 +1,6 @@
 /*
 Luca Borges
-Programa:
+Programa: um programa para calcular a media
 */
 #include <stdio.h>
 
