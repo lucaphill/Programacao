@@ -37,8 +37,8 @@ float FormaTrianguloRetangulo(float a, float b, float c){
 
 
 int main(void){
-    float a,b,c;
-    bool ehTrianguloRetangulo, valorLado;
+    float a,b,c, valorLado;
+    bool ehTrianguloRetangulo;
 
     puts("Digite os valores de a, b e c do seu triangulo:");
     scanf("%f %f %f", &a, &b, &c);
@@ -60,7 +60,7 @@ int main(void){
             puts("Os valores de entrada sao invalidos");
 
         } else {
-            printf ("Para que haja um triangulo retangulo, tem que ser %.1f", valorLado);
+            printf ("Para que haja um triangulo retangulo, o valor indeterminado tem que ser %.1f", valorLado);
         }
     
     }
