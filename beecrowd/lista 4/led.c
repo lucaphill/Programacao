@@ -1,4 +1,8 @@
-// Um programa que conta quantos leds são necessários para fazer um contador de numeros
+/* 
+Luca Borges
+Programa: conta quantos leds são necessários para fazer um contador de 
+numeros
+*/
 #include<stdio.h>
 #include<string.h>
 
