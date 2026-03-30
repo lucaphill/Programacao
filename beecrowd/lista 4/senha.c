@@ -41,5 +41,5 @@ int main(void){
         puts("Senha invalida.");
         }
     }
-        
+    return 0;
 }

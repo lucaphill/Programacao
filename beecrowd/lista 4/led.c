@@ -46,4 +46,5 @@ int main(void){
         leds = 0;
 
     }
+    return 0;
 }
