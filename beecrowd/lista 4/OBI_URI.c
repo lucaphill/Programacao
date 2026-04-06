@@ -1,6 +1,6 @@
 /*
 Luca Borges
-Programa: Correção de palavras
+Programa: Indentifica e corrige palavras (uma letra e tamanho fixo)
 */
 #include <stdio.h>
 #include <string.h>
@@ -26,7 +26,8 @@ int main(void){
             *(uri+2) = 'I';
         }
 
-        printf(" %s", palavra);
+        if(i > 0) printf(" ");
+        printf("%s", palavra);
     }
     printf("\n");
     return 0;
