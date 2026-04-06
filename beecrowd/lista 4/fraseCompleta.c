@@ -58,7 +58,7 @@ int main(void){
         } else if (completa == -1){
             puts("frase mal elaborada");
         }
-    }
 
-    return 0;
+    return 0; 
+    
 }
