@@ -1,0 +1,27 @@
+/*
+Luca Borges
+Programa: Identifica uma sequência de codigos geneticos em uma string*/
+
+#include <stdio.h> 
+#include <string.h>
+ 
+int main(void){
+    char dna[102];
+    char forte[102];
+    char *ehForte;
+
+    while (scanf("%s", dna) == 1){
+        scanf("%s", forte);
+
+        ehForte = strstr(dna, forte);
+
+        if(ehForte){
+            printf("Resistente\n");
+        } else {
+            printf("Nao resistente\n");
+        }
+        
+    }
+
+    return 0;
+}
