@@ -1,0 +1,7 @@
+prefix=/home/luca/Documentos/code/quantum/miniconda3/envs/qiskit
+includedir=${prefix}/include
+
+Name: RenderProto
+Description: Render extension headers
+Version: 0.11.1
+Cflags: -I${includedir}

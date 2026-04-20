@@ -1,0 +1,5 @@
+#!/home/luca/Documentos/code/quantum/miniconda3/envs/qiskit/bin/python3.14
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

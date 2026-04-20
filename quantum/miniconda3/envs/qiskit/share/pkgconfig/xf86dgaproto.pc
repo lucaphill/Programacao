@@ -1,0 +1,7 @@
+prefix=/home/luca/Documentos/code/quantum/miniconda3/envs/qiskit
+includedir=${prefix}/include
+ 
+Name: XF86DGAProto
+Description: XF86DGA extension headers
+Version: 2.1
+Cflags: -I${includedir}

@@ -1,0 +1,7 @@
+prefix=/home/luca/Documentos/code/quantum/miniconda3/envs/qiskit
+includedir=${prefix}/include
+ 
+Name: XExtProto
+Description: XExt extension headers
+Version: 7.3.0
+Cflags: -I${includedir}

@@ -1,0 +1,22 @@
+{
+  "name": "pip",
+  "version": "26.0.1",
+  "build": "pyh0d26453_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "subdir": "noarch",
+  "fn": "pip-26.0.1-pyh0d26453_1.conda",
+  "md5": "e410008b301730a4d03f56f9838b36df",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/pip-26.0.1-pyh0d26453_1.conda",
+  "sha256": "5c90cacab5bba3b2092f2854c7dd23ba991ce23219fc905d49af106820a854ec",
+  "depends": [
+    "python >=3.14.0a0"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "license_family": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1774988905000,
+  "size": 1178756
+}
