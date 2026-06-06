@@ -9,11 +9,11 @@ public class dados{
             valoresDado[i] = (int)(Math.random()*6)+1;
             soma += valoresDado[i];
         }
-        System.err.println("Números sorteados:");
+        System.out.println("Números sorteados:");
         for(int i = 0; i < 3; i++){
-            System.err.println(valoresDado[i]);
+            System.out.println(valoresDado[i]);
         }
-        System.err.println("Total = " + soma);
+        System.out.println("Total = " + soma);
 
     }
 }
