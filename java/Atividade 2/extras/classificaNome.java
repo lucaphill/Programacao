@@ -19,8 +19,8 @@ public class classificaNome {
 
 
     public static void VerificaLetra(String[] arr){
+        System.out.println("Nomes que começam com a:");
         for(int i = 0; i < arr.length; i++){
-            System.out.println("Nomes que começam com a:");
             if(arr[i].startsWith("A") || arr[i].startsWith("a")){
                 System.out.println(arr[i]);
             }
@@ -29,20 +29,18 @@ public class classificaNome {
 
 
     public static String TamanhoString(String[] arr) {
-        String maior = null;
+        String maior = "";
         for(int i = 0; i < arr.length; i++){
             if(arr[i].length() > maior.length()){
                 maior = arr[i];
             }
         }
-        System.out.println(maior);
-
         return maior;
     }
 
 
     public static void Capitalismo(String string) {
         String alto = string.toUpperCase();
-        System.out.println(alto);
+        System.out.println("Maior nome em upperCase: " + alto);
     }
 }
