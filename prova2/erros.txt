@@ -1,0 +1,22 @@
+/*
+Luca Borges 202510103587
+Thiago Sales 20250103602
+*/
+
+Código 1:
+Linha 5:"double divisão = 20 ÷ 4;" O operador de divisão não é ÷ e sim /.
+Linha 7:"int @numero = 5;" Caracter @ é um caracter inválido para nome de variável
+Linha 10:"public voiid imprimir() {" escrita errado do "void", foi escrito com 2 i
+
+=================================
+Código 2:
+Linha 6:"if(num1 = num2) System.out.println("iguais");" operador de comparação errado o correto seria "num1 == num2"
+Linha 9:"System.out.println("O produto de num1 e num2 é: " + p)" Falta o ; no final da linha
+Linha 13:"System.out.println("O quociente de num1 e num2 é: " q);" Falta o "+", o correto seria "O quociente de num1 e num2 é: " + q"
+=================================
+Código 3:
+Linha 4 e 5:"void sumVar(int var){
+ return var++;
+ }" O método é void, mas possuí um return, ou a função deve ser declarada como int ao invés de void ou a 4° linha deve ser escrita sem o return "var++;"
+Linha 8 e 9:"var = 1000;
+ sumVar(var);" var é declarada na linha 2 e é uma variável estática, não podendo ser alterada dentro da main nem por métodos o certo seria declara-la dentro da main

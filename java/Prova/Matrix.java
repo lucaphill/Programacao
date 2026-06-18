@@ -41,6 +41,10 @@ public class Matrix {
         }
         else if(num == 3){
             determinante3x3(matriz);
+        } else if (num > 3){
+            // atividade extra
+            System.out.println("Atividade extra");
+            System.out.println("Determinante x" + num + ": " + determinanteNxN(matriz));
         }
     }
 
@@ -116,14 +120,54 @@ public class Matrix {
     }
 
 
-    public static void determinante3x3(int[][] m){
+    public static int determinante3x3(int[][] m){
         int a = m[0][0], b = m[0][1], c = m[0][2];
         int d = m[1][0], e = m[1][1], f = m[1][2];
         int g = m[2][0], h = m[2][1], i = m[2][2];
 
         int det = (a*e*i + b*f*g + d*h*c) - (c*e*g + f*h*a + i*b*d);
 
-        System.out.println("Determinante: "+det);
+        //System.out.println("Determinante: "+det);
+        return det;
     }
+
+    // Atividade extra
+    public static int determinanteNxN(int [][] matriz){
+        int contagem = 0;
+        int tamanho = matriz[0].length;
+
+        if(tamanho == 3){
+            return determinante3x3(matriz);
+        }
+
+        for(int coluna = 0; coluna< tamanho; ++coluna){
+            int[][] mat = new int [tamanho-1][tamanho-1];
+
+            for(int i = 1; i < tamanho; ++i){
+                // sub matriz
+                int nova_coluna = 0;
+                for(int j = 0; j < tamanho; ++j){
+                    if(j == coluna) continue;
+
+                    mat[i-1][nova_coluna] = matriz[i][j];
+                    nova_coluna++;
+                }
+                
+            }
+            // equação do cara importante
+            int sinal = (coluna % 2 == 0) ? 1 : -1; 
+            contagem += sinal * matriz[0][coluna] * determinanteNxN(mat);
+        }
+        return contagem;
+    }
+    /*
+    public static int randomProbabilidadeZero(){
+        int chance = (int)(Math.random() * 4); // 0 a 3 → 25% de chance de cair 0
+        if (chance == 0) return 0;
+        // Caso contrário, sorteia entre -10 a 10:
+        int n = (int)(Math.random() * 21) - 10;
+        return n;
+    }
+    */
 }
 
