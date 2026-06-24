@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class organizando {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o número de elementos (Máx. 50):");
+        System.out.print("Digite o número de elementos (Máx. 50): ");
         int casas = teclado.nextInt();
         teclado.close();
         // verifica se o número é valido
