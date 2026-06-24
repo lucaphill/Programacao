@@ -1,4 +1,5 @@
 package Revisão;
+import java.text.DecimalFormat;
 
 public class opecacoesMatriz {
     public static void main(String[] args) {
@@ -76,9 +77,12 @@ public class opecacoesMatriz {
 
 
     public static void printaMatrix(int[][] matrix){
+        DecimalFormat df = new DecimalFormat();
+        df.applyPattern("000");
+
         for(int i=0; i<4; i++){
             for(int j=0; j<3; j++){
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(df.format(matrix[i][j]) + " ");
             }
             System.out.println();
         }
