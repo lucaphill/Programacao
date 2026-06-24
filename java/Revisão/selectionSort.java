@@ -15,6 +15,9 @@ public class selectionSort {
         System.out.println("Array desordenado: ");
         printaArray(array);
         // agora aplicamos o selection sort
+        System.out.println("Array ordenado: ");
+        array = selectSort(array);
+        printaArray(array);
     
     }
     
@@ -38,13 +41,14 @@ public class selectionSort {
 
     public static int[] selectSort(int[] arr){
         for(int i=0; i< arr.length -1; i++){
-            int temporario =  arr[i];
-            for(int j=0; j< arr.length; j++){
-                
+            int mim = i;
+            for(int j= i+1; j< arr.length; j++){
+                if(arr[j] < arr[mim]) mim = j;    
             }
-
+            int temporario = arr[i];
+            arr[i] = arr[mim];
+            arr[mim] = temporario;
         }
-
         return arr;
     }
 }
