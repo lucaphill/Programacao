@@ -140,7 +140,7 @@ public class Matrix {
             return determinante3x3(matriz);
         }
 
-        for(int coluna = 0; coluna< tamanho; ++coluna){
+        for(int coluna = 0; coluna < tamanho; ++coluna){
             int[][] mat = new int [tamanho-1][tamanho-1];
 
             for(int i = 1; i < tamanho; ++i){
