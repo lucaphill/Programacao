@@ -133,12 +133,12 @@ public class Matrix {
 
     // Atividade extra
     public static int determinanteNxN(int [][] matriz){
-        int contagem = 0;
-        int tamanho = matriz[0].length;
-
         if(tamanho == 3){
             return determinante3x3(matriz);
         }
+        
+        int contagem = 0;
+        int tamanho = matriz[0].length;
 
         for(int coluna = 0; coluna < tamanho; ++coluna){
             int[][] mat = new int [tamanho-1][tamanho-1];
