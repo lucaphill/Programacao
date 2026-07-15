@@ -7,6 +7,7 @@ public class palindromo {
         System.out.print("Insira uma palavra pra ver se é palindromo: ");
         String palavra = teclado.nextLine();
 
+        teclado.close();
         boolean v = ehpalidromo(palavra);
 
         if(v) System.out.println("Palindromo");
