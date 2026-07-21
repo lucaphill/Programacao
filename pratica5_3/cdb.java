@@ -11,12 +11,16 @@ public class cdb extends ativoFinanceiro{
     }
 
     @Override
+    public String obterTipo() {
+        return "CDB";
+    }
+    @Override
     public double calculaRetorno(int meses) {
-        return valor_investido + (valor_investido * (meses*0.08));
+        return valor_investido + (valor_investido * (meses*0.04));
     }
     @Override
     public boolean podeResgatar(double valor, int meses) {
-        if(meses >= 6) return true;
+        if(valor < calculaRetorno(meses)*0.5) return true;
         else return false;
     }
 }

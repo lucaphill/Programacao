@@ -11,6 +11,10 @@ public class acao extends ativoFinanceiro {
     }
 
     @Override
+    public String obterTipo() {
+        return "Ação";
+    }
+    @Override
     public double calculaRetorno(int meses) {
         return valor_investido + (valor_investido * (meses*0.08));
     }

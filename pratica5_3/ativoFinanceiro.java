@@ -4,8 +4,6 @@ Thiago Sales 20250103602
 */
 package pratica5_3;
 
-import pratica5.publicacao;
-
 public abstract class ativoFinanceiro {
     protected String nome;
     protected double valor_investido;
@@ -24,6 +22,7 @@ public abstract class ativoFinanceiro {
         return valor_investido;
     }
 
+    public abstract String obterTipo();
     public abstract double calculaRetorno(int meses);
     public abstract boolean podeResgatar(double valor, int meses);
 }
