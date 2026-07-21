@@ -18,7 +18,7 @@ public class carteiraInvestimentos {
 
     public boolean resgatar(String nomeAtivo, double valor, int meses){
         for (int i = 0; i < ativos.size(); i++){
-            if (ativos.get(i).getNome() == nomeAtivo){
+            if (ativos.get(i).getNome().equalsIgnoreCase(nomeAtivo)){
                 if(ativos.get(i).podeResgatar(valor, meses)){
                     ativos.remove(i);
                     return true;
