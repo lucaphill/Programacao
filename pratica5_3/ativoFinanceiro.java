@@ -5,7 +5,7 @@ Thiago Sales 20250103602
 package pratica5_3;
 
 public abstract class ativoFinanceiro {
-    protected String nome;
+    public String nome;
     protected double valor_investido;
     
     // getters e setters
